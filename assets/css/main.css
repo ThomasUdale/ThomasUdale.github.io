@@ -2217,6 +2217,11 @@ input, select, textarea {
 				}
 
 			}
+.logo img {
+	object-fit: cover;
+	height: 100px;
+	width: 100px;
+	}
 
 /* List */
 
