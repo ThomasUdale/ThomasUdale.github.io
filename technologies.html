@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thomas Udale</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="index.html" class="logo"><strong>Thomas Udale</strong></a>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="experience.html">Experience</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li><a href="technologies.html">Technologies</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#one" class="button primary fit">Explore My Portfolio</a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Technologies</h1>
+							</header>
+							<div class="content">
+								<p>What tools have I worked with</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Pipelines</h2>
+									</header>
+									<p>
+										Here are two examples of the pipeline structures I have worked with. 
+										<br>
+										<br>
+										At Curation Zone, I work with pipelines which are structured as Python containers, orchestrated by Airflow.
+										We take data from a variety of sources and store them in a MongoDB database, as schemas vary across sources.
+										Following ingestion into Mongo, the data is processed in a Python-based pipeline, using parquet files as the storage method between steps. 
+										These files are continuously backed up to s3, to allow for debugging and restarting the pipeline from an intermediate step.
+										The output is stored in Postgres, using an ORM (SQL Alchemy) to enforce data types and structure. 
+										<span class="image fit"><img src="images/pipelines/CZ_pipe.png" alt=""></span>
+
+										At FTI Consulting, I worked on pipelines which had a similar structure with some differences around data types for ingestion, and intermediate storage. 
+										SQL provided greater security, and more type safety for intermediate steps. 
+										<span class="image fit"><img src="images/pipelines/FTI_pipe.png" alt=""></span>
+
+										In both cases, the pipelines were orchestrated using Apache Aiflow. The deployments were created using git based docker containers, DAGs were stored in their own repository.
+										<br>
+										There is automated testing, formatting and type checking for the python processing, using the pytest package.
+									</p>
+								</div>
+							</section>
+
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Specific Technologies</h2>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Usage</th>
+														<th>Experience</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Python</td>
+														<td>Main language for data processing</td>
+														<td>2 YOE professionally, 4 YOE hobby</td>
+													</tr>
+													<tr>
+														<td>SQL</td>
+														<td>Used for storing and querying data for analysis, processing</td>
+														<td>2 YOE professionally, 4 YOE hobby</td>
+													</tr>
+													<tr>
+														<td>Pandas/Numpy/SKlearn/Dask</td>
+														<td>Data processing, used in every pipeline I have built</td>
+														<td>2 YOE professionally, 4 YOE hobby</td>
+													</tr>
+													<tr>
+														<td>MongoDB</td>
+														<td>Storing non-relational data</td>
+														<td>1 YOE professionally</td>
+													</tr>
+													<tr>
+														<td>Apache Airflow</td>
+														<td>Used for orchestrating data pipelines, have written custom operators.</td>
+														<td>2 YOE professionally</td>
+													</tr>
+													<tr>
+														<td>Huggingface</td>
+														<td>Library used for advanced NLP learning tasks</td>
+														<td>2 YOE professionally</td>
+													</tr>
+													<tr>
+														<td>Tensorflow/Pytorch</td>
+														<td>Libraries used for training/inference of Deep Learning Models</td>
+														<td>2 YOE professionally, 4 YOE hobby</td>
+													</tr>
+													<tr>
+														<td>C#</td>
+														<td>Language used for hobby projects, such as game development</td>
+														<td>3 YOE hobby</td>
+													</tr>
+													<tr>
+														<td>Rust</td>
+														<td>Learning a lower-level language to improve my Software Engineering skills.</td>
+														<td>6Mo hobby</td>
+													</tr>
+												</tbody>
+												<tfoot>
+												</tfoot>
+											</table>
+										</div>
+									</header>
+								</div>
+							</section>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<span>tomwudale@live.com</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>+447552311403</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/ThomasUdale" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/thomas-udale/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</div>
+				</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
